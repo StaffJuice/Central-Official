@@ -1,0 +1,107 @@
+Guía para usar el Modo Operador y Comandos de Staff en el Servidor Central de Minecraft
+
+1. Ingresar al modo operador en el juego:
+   - Una vez que hayas iniciado el servidor y te hayas unido al juego, puedes otorgarte a ti mismo o a otro jugador el modo operador.
+   - En la consola del servidor o en el chat del juego, ingresa el comando "/op <nombre de usuario>" para otorgar el modo operador. Por ejemplo: "/op Player1".
+
+2. Utilizar comandos de staff:
+   - Ahora que tienes acceso al modo operador, puedes utilizar varios comandos de staff. A continuación, se mencionan algunos comandos útiles:
+
+     - "/kick <nombre de usuario> [razón]": Expulsa a un jugador del servidor. Puedes proporcionar una razón opcional.
+     - "/ban <nombre de usuario> [razón]": Prohíbe permanentemente a un jugador en el servidor. Puedes proporcionar una razón opcional.
+     - "/mute <nombre de usuario> [tiempo]": Silencia a un jugador, evitando que envíe mensajes en el chat. Puedes especificar un tiempo opcional para la duración del silencio.
+     - "/tp <nombre de usuario> <destino>": Teletransporta a un jugador a una ubicación específica. El destino puede ser otro jugador o coordenadas.
+     - "/gamemode <modo>": Cambia tu propio modo de juego. Los modos comunes son Survival (survival), Creative (creativo) y Adventure (aventura).
+     - "/give <nombre de usuario> <objeto> [cantidad]": Otorga un objeto al inventario de un jugador. Puedes especificar una cantidad opcional.
+
+3. Uso de CoreProtect:
+   - CoreProtect es una herramienta que permite realizar acciones de seguimiento y recuperación de cambios en el mundo del servidor. A continuación, se muestran algunos comandos útiles de CoreProtect:
+
+     - "/co inspect <jugador>": Permite inspeccionar los cambios realizados por un jugador en el mundo.
+       Ejemplo: /co inspect Notch
+
+     - "/co rollback <parámetros>": Revierte los cambios realizados en un área específica del mundo.
+       Ejemplo: /co rollback t:24h-10m area:10,10,10 20,20,20
+
+     - "/co restore <parámetros>": Restaura bloques o regiones enteras que hayan sido eliminados.
+       Ejemplo: /co restore r:10 30,30,30 40,40,40
+
+     - "/co lookup <parámetros>": Busca registros específicos basados en criterios como jugadores, bloques o fechas.
+       Ejemplo: /co lookup b:diamond_ore t:1d-1h-30m r:5
+
+     - "/co near <radio>": Muestra los cambios realizados cerca del jugador que ejecuta el comando.
+       Ejemplo: /co near 50
+
+     - "/co purge <parámetros>": Elimina los registros antiguos de CoreProtect para liberar espacio en la base de datos.
+       Ejemplo: /co purge t:7d-12h
+
+     - "/co stop": Detiene la grabación de cambios en el mundo. No se registrarán nuevos eventos hasta que se reinicie.
+       Ejemplo: /co stop
+
+4. Uso de CMI (Customizable Minecraft Interface):
+   - CMI es un plugin que proporciona una variedad de comandos y funciones adicionales para el servidor. A continuación, se muestran algunos comandos útiles:
+
+     - "/cmi fly <jugador>": Activa o desactiva el vuelo para un jugador.
+       Ejemplo: /cmi fly Notch
+
+     - "/cmi gamemode <modo> [jugador]": Cambia el modo de juego de un jugador.
+       Ejemplo: /cmi gamemode creative Notch
+
+     - "/cmi heal [jugador]": Restaura la salud y el hambre de un jugador.
+       Ejemplo: /cmi heal Notch
+
+     - "/cmi feed [jugador]": Rellena la barra de hambre de un jugador.
+       Ejemplo: /cmi feed Notch
+
+     - "/cmi god [jugador]": Activa o desactiva el modo invulnerable para un jugador.
+       Ejemplo: /cmi god Notch
+
+     - "/cmi freeze <jugador>": Congela o descongela a un jugador, impidiendo que se mueva.
+       Ejemplo: /cmi freeze Notch
+
+     - "/cmi vanish [jugador]": Activa o desactiva el modo invisible para un jugador.
+       Ejemplo: /cmi vanish Notch
+
+     - "/cmi invsee <jugador>": Permite ver el inventario de otro jugador.
+       Ejemplo: /cmi invsee Notch
+
+     - "/cmi jail <jugador> <cárcel>": Envía a un jugador a una cárcel específica.
+       Ejemplo: /cmi jail Notch prison
+
+     - "/cmi warp": Gestiona los puntos de teletransporte (warps) del servidor.
+       Ejemplo: /cmi warp list
+
+5. Uso de DiscordSrv (Integración de Discord):
+   - DiscordSrv es un plugin que permite la integración de Discord con el servidor de Minecraft. A continuación, se mencionan algunos comandos útiles de DiscordSrv:
+
+     - "/discord unlink": Desvincula tu cuenta de Discord de tu cuenta de Minecraft.
+       Ejemplo: /discord unlink
+       Descripción: Este comando te permite desvincular tu cuenta de Discord de tu cuenta de Minecraft en el servidor.
+
+     - "/discord sync": Sincroniza los roles de Discord con los permisos de Minecraft.
+       Ejemplo: /discord sync
+       Descripción: Este comando sincroniza los roles de Discord con los permisos de Minecraft, asegurando que los jugadores tengan los mismos permisos en ambos sistemas.
+
+     - "/discord reload": Recarga la configuración del plugin DiscordSrv.
+       Ejemplo: /discord reload
+       Descripción: Utiliza este comando para recargar la configuración del plugin DiscordSrv sin reiniciar el servidor de Minecraft.
+
+     - "/discord reset": Restablece la configuración del plugin DiscordSrv a los valores predeterminados.
+       Ejemplo: /discord reset
+       Descripción: Este comando restablece la configuración del plugin DiscordSrv a los valores predeterminados, eliminando cualquier configuración personalizada realizada.
+
+     - "/discord ban <usuario>": Prohíbe a un usuario utilizar los comandos de DiscordSrv.
+       Ejemplo: /discord ban @JohnDoe
+       Descripción: Este comando prohíbe a un usuario específico utilizar los comandos de DiscordSrv, lo que los excluye de las funciones y comandos relacionados con DiscordSrv.
+
+     - "/discord unban <usuario>": Levanta la prohibición de un usuario para utilizar los comandos de DiscordSrv.
+       Ejemplo: /discord unban @JohnDoe
+       Descripción: Utiliza este comando para levantar la prohibición de un usuario y permitir que vuelva a utilizar los comandos de DiscordSrv.
+
+     - "/discord listbans": Muestra la lista de usuarios prohibidos en DiscordSrv.
+       Ejemplo: /discord listbans
+       Descripción: Este comando muestra la lista de usuarios que han sido prohibidos para utilizar los comandos de DiscordSrv en el servidor.
+
+Recuerda que el uso de estos comandos adicionales requiere el plugin CMI instalado en el servidor. Asegúrate de tenerlo correctamente configurado y actualizado.
+
+¡Disfruta de tu experiencia como miembro del personal en el servidor Central de Minecraft!
