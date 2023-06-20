@@ -1,7 +1,7 @@
 Banderas de arranque para el servidor con un total de 16g de ram.
 
 Banderas Actuales:
-
+1/10 = 8
 public class Main {
     public static void main(String[] args) {
         String javaCommand = "java";
