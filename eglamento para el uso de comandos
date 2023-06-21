@@ -1,0 +1,26 @@
+Reglamento para el uso de comandos en el servidor Central de Minecraft:
+
+1. Owner:
+   - Tiene acceso completo a todos los comandos del servidor, incluidos los comandos de Modo Operador, CoreProtect, CMI y DiscordSrv.
+
+2. Administrador:
+   - Puede utilizar los comandos de Modo Operador y CoreProtect mencionados en la guía.
+   - Tiene acceso a los comandos de CMI mencionados en la guía, excepto los comandos de "jail" y "warp".
+   - Puede utilizar todos los comandos de DiscordSrv mencionados en la guía.
+
+3. Moderador:
+   - Puede utilizar los comandos de Modo Operador mencionados en la guía.
+   - Tiene acceso a los comandos de CoreProtect mencionados en la guía, excepto los comandos de "purge" y "stop".
+   - Puede utilizar algunos comandos seleccionados de CMI.
+   - Tiene acceso a los comandos de DiscordSrv mencionados en la guía, excepto los comandos de "sync", "reload" y "reset".
+
+4. Helper:
+   - Puede utilizar el comando de Modo Operador mencionado en la guía para cambiar su propio modo de juego.
+   - Tiene acceso a algunos comandos seleccionados de CMI.
+   - No tiene acceso a los comandos de CoreProtect ni a los comandos de DiscordSrv mencionados en la guía.
+
+Este reglamento es una base concreta de que cosas tienen acceso los rango, mas no obstante los comandos que tienen cierta importancia 
+grave entorno a afectar el a un jugador o ayudar, mejorar o quitar algo del mundo sea el que sea, alterar de alguna forma las configuraciones
+hechas por el Configurador en su Momento o si tenia autorizacion de tener conocimiento de lo que esta realizando, ya que hacer caso omiso
+y solamente ejercer los comandos que estan en su poder de la categorizacion que se ilustra en la parte superior, seran sancionados con re ordenarles
+en un rango mas bajo, en un caso mas extremo, ser expulsado del cuerpo administrativo de Central Official.
